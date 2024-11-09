@@ -14,7 +14,7 @@ namespace ScpProxyChat
         public override string Author => "angelseraphim.";
         public override string Name => "ScpProxyChat";
         public override string Prefix => "ScpProxyChat";
-        public override Version Version => new Version(1, 0, 0, 8);
+        public override Version Version => new Version(1, 1, 0, 8);
 
         private readonly List<Player> ToggledPlayers = new List<Player>();
 
@@ -68,7 +68,7 @@ namespace ScpProxyChat
 
         public void OnVoiceChatting(VoiceChattingEventArgs ev)
         {
-            if (ev.VoiceMessage.Channel != VoiceChatChannel.ScpChat)
+            if ((ev.VoiceMessage.Channel & ~VoiceChatChannel.ScpChat) != 0)
                 return;
 
             if (!ToggledPlayers.Contains(ev.Player))
