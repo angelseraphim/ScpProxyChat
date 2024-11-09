@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScpProxyChat", "ScpProxyChat\ScpProxyChat.csproj", "{8F1FFAFE-F0E4-4BFB-8789-9231B5C5AF15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScpProxyChat9", "ScpProxyChat9\ScpProxyChat9.csproj", "{A003FD76-5779-4DB9-B4EB-C3067874A597}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F1FFAFE-F0E4-4BFB-8789-9231B5C5AF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1FFAFE-F0E4-4BFB-8789-9231B5C5AF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1FFAFE-F0E4-4BFB-8789-9231B5C5AF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1FFAFE-F0E4-4BFB-8789-9231B5C5AF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A003FD76-5779-4DB9-B4EB-C3067874A597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A003FD76-5779-4DB9-B4EB-C3067874A597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A003FD76-5779-4DB9-B4EB-C3067874A597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A003FD76-5779-4DB9-B4EB-C3067874A597}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4A01ABC-814A-42F2-A083-666A4E6F11D2}
+	EndGlobalSection
+EndGlobal
