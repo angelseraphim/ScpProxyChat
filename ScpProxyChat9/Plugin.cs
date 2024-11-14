@@ -75,12 +75,12 @@ namespace ScpProxyChat
                 return;
 
             VoiceMessage voiceMessage = ev.VoiceMessage;
-            foreach (Player player in Player.List.Where(p => !p.IsScp && !p.IsDead && Vector3.Distance(ev.Player.Position, p.Position) <= Config.MaxDistance))
+            foreach (Player player in Player.List.Where(p => !p.IsNPC && !p.IsHost && !p.IsScp && !p.IsDead && Vector3.Distance(ev.Player.Position, p.Position) <= Config.MaxDistance))
             {
                 voiceMessage.Channel = VoiceChatChannel.Proximity;
                 player.Connection.Send(voiceMessage);
             }
-            foreach (Player player in ev.Player.CurrentSpectatingPlayers)
+            foreach (Player player in ev.Player.CurrentSpectatingPlayers.Where(p => !p.IsNPC && !p.IsHost))
             {
                 voiceMessage.Channel = VoiceChatChannel.Proximity;
                 player.Connection.Send(voiceMessage);
